@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--css files-->
+  <link rel="stylesheet" href="artists.css">
+   <!-- responsive media query-->
+   <link rel="stylesheet" href="responsive.css">
+
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Padauk&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  
+
+  <title>katy perry</title>
+</head>
+<body>
+  <main class="relative-position">
+   <!--left navigation-menu -->
+    <aside class="left-nav fixed-position">
+
+      <div class="profile padding15px ">
+        <a href="#" class="flex no-wrap">
+          <div class="profile-pic">
+            <img src="images/logo/sumit.jpg" alt="sumit" class="profile-img">
+          </div>
+          <span class="profile-name">Sumit</span>
+        </a>
+      </div>
+      
+      <div class="home padding15px border-on-hover">
+        <a href="index.html">
+        <span class="left-nav-icon"><i class="fas fa-home"></i></span>
+        <h3 class="inline font-size">Home</h3>
+        </a>
+      </div>
+
+      <div class="browse padding15px border-on-hover">
+        <a href="index.html">
+        <span class="left-nav-icon"><i class="fab fa-chrome"></i></span>
+        <h3 class="inline font-size">Browse</h3>
+        </a>
+      </div>
+      
+      <div class="radio padding15px border-on-hover">
+        <a href="#radio">
+        <span class="left-nav-icon"><i class="fas fa-wifi"></i></span>
+        <h3 class="inline font-size">Radio</h3>
+        </a>
+      </div>
+
+      <div class="library">
+        <span class="lightgray club-left-nav">My Library</span>
+
+        <a href="#bollywood">
+          <div class="mix padding15px border-on-hover">
+            <span class="left-nav-icon"><i class="fas fa-headphones-alt"></i></span>
+            <h3 class="inline font-size">My Mix</h3>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="playlist padding15px border-on-hover">
+            <span class="left-nav-icon"><i class="fas fa-list"></i></span>
+            <h3 class="inline font-size">Playlist</h3>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="album  padding15px border-on-hover">
+            <span class="left-nav-icon"><i class="fas fa-tape"></i></span>
+            <h3 class="inline font-size">Album</h3>
+          </div>
+        </a>
+
+        <a href="#artists">
+          <div class="artists  padding15px border-on-hover">
+            <span class="left-nav-icon"><i class="fab fa-napster"></i></span>
+            <h3 class="inline font-size">Artist</h3>
+          </div>
+        </a>
+
+      </div>
+      
+      <div class="make-playlist">
+        <span class="lightgray club-left-nav">My Playlist</span>
+        <a href="#">
+          <div class="create padding15px border-on-hover">
+          <span class="left-nav-icon"><i class="fas fa-plus-circle"></i></span>
+          <h3 class="inline font-size">Create</h3>
+          </div>
+        </a>
+      </div>
+    </aside>
+
+    <!--bottom music player i.e. fixed wrt the screen-->
+  
+  <div class="bottom-music fixed-position  flex no-wrap ">
+    <!-- left of the music player containing song name-->
+    <div class="left-music">
+      <div class="songs-section relative-position">
+        <img src="images/songs/roar.jpg" alt="" class="player-song-image inline space-between">
+        <h3 class="inline absolute-position">Roar</h3>
+        <h5 class="inline absolute-position">Katy Perry</h5>
+      </div>
+    </div>
+    <!-- center all keys of music player -->
+    <div class="functions flex no-wrap relative-position">
+      <i class="fas fa-random"></i>
+      <i class="fas fa-step-backward"></i>
+      <i class="far fa-pause-circle"></i>
+      <i class="fas fa-step-forward"></i>
+      <i class="fas fa-history"></i>
+      <div class="player absolute-position flex no-wrap">
+        <span>1:13</span>
+        <div class="time-total">
+        <div class="time-played"></div>
+        </div>
+        <span>4:10</span>
+      </div>
+    </div>
+    <!--right part containing volume key-->
+    <div class="volume flex no-wrap ">
+      <i class="fas fa-heart liked"></i>
+      <i class="fas fa-volume-up"></i>
+      <div class="volume-full">
+        <div class="volume-set">
+        </div>
+      </div>
+      <i class="fas fa-external-link-alt"></i>
+    </div>
+  </div>
+  
+  <!-- end of music player-->
+
+    <!-- start of header of the  profile of artists-->
+
+  <div class="playlist-body">
+    <div class="katy-bg">
+      <h1>Katy Pery</h1>
+      <div class="katy-content">
+        Katy Perry, is an American singer, songwriter, and television judge.Her subsequent releases, One of the Boys and Teenage Dream, involve themes of sex and love. One of the Boys is a pop rock record, while Teenage Dream features disco influences.
+      </div>
+      <button class="btn play">Play</button>
+      <button class="btn follow">Following</button>
+    </div>
+    
+    <!--popular songs list starts here-->
+
+    <div class="body-container">
+      <!-- section header -->
+      <h1 class="section-header">Popular Songs</h1>
+
+      <!-- container of song name and album name-->
+
+      <div class="songs-container flex no-wrap space-between"> 
+        <!-- each song name section-->
+          <div class="song-name flex no-wrap">
+            <img src="images/songs/roar.jpg" alt="" class="song-img">
+            <span>Roar</span>
+          </div>
+          <!-- album name -->
+          <div class="album-name">Prism</div>
+          <!-- like section -->
+          <div class="like"><i class="far fa-heart absolute-position"></i></div>
+      </div>
+
+      <div class="songs-container flex no-wrap space-between"> 
+        <div class="song-name flex no-wrap">
+          <img src="images/songs/smile.jpeg" alt="" class="song-img">
+          <span>Never Really Over</span>
+        </div>
+        <div class="album-name">Smile</div>
+        <div class="like"><i class="fas fa-heart absolute-position colored"></i></div>
+    </div>
+
+      <div class="songs-container flex no-wrap space-between"> 
+        <div class="song-name flex no-wrap">
+          <img src="images/songs/witness.jpeg" alt="" class="song-img">
+          <span>Hey Hey Hey</span>
+        </div>
+        <div class="album-name">Witness</div>
+        <div class="like"><i class="far fa-heart absolute-position"></i></div>
+    </div>
+
+    <div class="songs-container flex no-wrap space-between"> 
+      <div class="song-name flex no-wrap">
+        <img src="images/songs/boys.jpeg" alt="" class="song-img">
+        <span>I Kissed a Girl</span>
+      </div>
+      <div class="album-name">One of the Boys</div>
+      <div class="like"><i class="far fa-heart absolute-position"></i></div>
+    </div>
+
+    <div class="songs-container flex no-wrap space-between"> 
+      <div class="song-name flex no-wrap">
+        <img src="images/songs/hudson.jpeg" alt="" class="song-img">
+        <span>Trust in me</span>
+      </div>
+      <div class="album-name">Katy Hudson</div>
+      <div class="like"><i class="fas fa-heart absolute-position colored"></i></div>
+    </div>
+
+    <div class="songs-container flex no-wrap space-between"> 
+      <div class="song-name flex no-wrap">
+        <img src="images/songs/teenage.jpeg" alt="" class="song-img">
+        <span>Last Friday Night</span>
+      </div>
+      <div class="album-name">Teenage Dream</div>
+      <div class="like"><i class="far fa-heart absolute-position"></i></div>
+     </div>
+
+      <div class="songs-container flex no-wrap space-between"> 
+        <div class="song-name flex no-wrap">
+          <img src="images/songs/roar.jpg" alt="" class="song-img">
+          <span>Roar</span>
+        </div>
+        <div class="album-name">Prism</div>
+        <div class="like"><i class="far fa-heart absolute-position"></i></div>
+    </div>
+
+      <div class="songs-container flex no-wrap space-between"> 
+        <div class="song-name flex no-wrap">
+          <img src="images/songs/smile.jpeg" alt="" class="song-img">
+          <span>Never Really Over</span>
+        </div>
+        <div class="album-name">Smile</div>
+        <div class="like"><i class="fas fa-heart absolute-position colored"></i></div>
+    </div>
+
+      <div class="songs-container flex no-wrap space-between"> 
+        <div class="song-name flex no-wrap">
+          <img src="images/songs/witness.jpeg" alt="" class="song-img">
+          <span>Hey Hey Hey</span>
+        </div>
+        <div class="album-name">Witness</div>
+        <div class="like"><i class="far fa-heart absolute-position"></i></div>
+    </div>
+
+    <div class="songs-container flex no-wrap space-between"> 
+      <div class="song-name flex no-wrap">
+        <img src="images/songs/boys.jpeg" alt="" class="song-img">
+        <span>I Kissed a Girl</span>
+      </div>
+      <div class="album-name">One of the Boys</div>
+      <div class="like"><i class="far fa-heart absolute-position"></i></div>
+    </div>
+
+    <div class="songs-container flex no-wrap space-between"> 
+      <div class="song-name flex no-wrap">
+        <img src="images/songs/hudson.jpeg" alt="" class="song-img">
+        <span>Trust in me</span>
+      </div>
+      <div class="album-name">Katy Hudson</div>
+      <div class="like"><i class="fas fa-heart absolute-position colored"></i></div>
+    </div>
+
+    <div class="songs-container flex no-wrap space-between border-bottom"> 
+      <div class="song-name flex no-wrap">
+        <img src="images/songs/teenage.jpeg" alt="" class="song-img">
+        <span>Last Friday Night</span>
+      </div>
+      <div class="album-name">Teenage Dream</div>
+      <div class="like"><i class="far fa-heart absolute-position"></i></div>
+    </div>
+
+  </div>
+    </div>
+    <!-- empty space at the bottom of page -->
+    <div class="blank-space"></div>
+  </main>
+</body>
+</html>

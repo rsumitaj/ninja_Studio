@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!--css files-->
+  <link rel="stylesheet" href="style.css">
+  <!-- responsive media query-->
+  <link rel="stylesheet" href="responsive.css">
+
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Padauk&display=swap" rel="stylesheet">
+
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  
+  <title>Ninja Studio</title>
+</head>
+
+<body>
+  <main class="relative-position">
+    
+    <!--left navigation-menu -->
+  <aside class="left-nav fixed-position">
+
+    <!-- each section of the left nav menu-->
+
+    <div class="profile padding15px ">
+      <a href="#" class="flex no-wrap">
+        <div class="profile-pic">
+          <img src="images/logo/sumit.jpg" alt="sumit" class="profile-img">
+        </div>
+        <span class="profile-name">Sumit</span>
+      </a>
+    </div>
+    
+    <div class="home padding15px border-on-hover">
+      <a href="#home">
+      <span class="left-nav-icon"><i class="fas fa-home"></i></span>
+      <h3 class="inline font-size">Home</h3>
+      </a>
+    </div>
+
+    <div class="browse padding15px border-on-hover">
+      <a href="#browse">
+      <span class="left-nav-icon"><i class="fab fa-chrome"></i></span>
+      <h3 class="inline font-size">Browse</h3>
+      </a>
+    </div>
+    
+    <div class="radio padding15px border-on-hover">
+      <a href="#radio">
+      <span class="left-nav-icon"><i class="fas fa-wifi"></i></span>
+      <h3 class="inline font-size">Radio</h3>
+      </a>
+    </div>
+
+    <div class="library">
+      <span class="lightgray club-left-nav">My Library</span>
+
+      <a href="#bollywood">
+        <div class="mix padding15px border-on-hover">
+          <span class="left-nav-icon"><i class="fas fa-headphones-alt"></i></span>
+          <h3 class="inline font-size">My Mix</h3>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="playlist padding15px border-on-hover">
+          <span class="left-nav-icon"><i class="fas fa-list"></i></span>
+          <h3 class="inline font-size">Playlist</h3>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="album  padding15px border-on-hover">
+          <span class="left-nav-icon"><i class="fas fa-tape"></i></span>
+          <h3 class="inline font-size">Album</h3>
+        </div>
+      </a>
+
+      <a href="#artists">
+        <div class="artists  padding15px border-on-hover">
+          <span class="left-nav-icon"><i class="fab fa-napster"></i></span>
+          <h3 class="inline font-size">Artist</h3>
+        </div>
+      </a>
+
+    </div>
+    
+    <div class="make-playlist">
+      <span class="lightgray club-left-nav">My Playlist</span>
+      <a href="#">
+        <div class="create padding15px border-on-hover">
+        <span class="left-nav-icon"><i class="fas fa-plus-circle"></i></span>
+        <h3 class="inline font-size">Create</h3>
+        </div>
+      </a>
+    </div>
+
+  </aside>
+  <!--end of left nav menu-->
+  
+  <!--top navigation menu-->
+  <nav id="home" class="top-nav flex absolute-position">
+    <!--arrows and home part-->
+    <div class="top-left-nav flex no-wrap">
+      <i class="fas fa-arrow-left arrow-l"></i>
+      <i class="fas fa-arrow-right arrow-r"></i>
+    <a href="#" class="home-top ">Home</a>
+  </div>
+  <!--search box top nav-->
+    <div class="search-box flex no-wrap">
+      <i class="fas fa-search search-box-icons"></i>
+      <input type="text" name="search" placeholder="Search" id="search-input"> 
+      <i class="fas fa-microphone search-box-icons"></i>
+    </div>
+  </nav>
+  <!--end of right nav menu-->
+  
+
+  <!--start of right songs Queue-->
+  
+  <aside class="right-nav fixed-position">
+    <div class="queue-header flex no-wrap ">
+      <!--right nav header-->
+      <i class="fas fa-music"></i>
+      <h1>Queue</h1>
+    </div>
+    <!--each songs of right nav-->
+    <div class="playlist-container ">
+      <div class="song-container relative-position">
+        <h4>Tu Jo Mila</h4>
+        <h5>Atif Aslam</h5>
+        <i class="far fa-heart absolute-position"></i>
+      </div>
+
+      <div class="song-container relative-position">
+        <h4>Roar</h4>
+        <h5>Katy Perry</h5>
+        <i class="far fa-heart absolute-position"></i>
+      </div>
+
+      <div class="song-container relative-position">
+        <h4>iT's YoU</h4>
+        <h5>Zyan Malik</h5>
+        <i class="fas fa-heart absolute-position liked"></i>
+      </div>
+
+      <div class="song-container relative-position">
+        <h4>Shape of u</h4>
+        <h5>Ed Sheeran</h5>
+        <i class="far fa-heart absolute-position"></i>
+      </div>
+
+      <div class="song-container relative-position">
+        <h4>Love me</h4>
+        <h5>Selena Gomez</h5>
+        <i class="fas fa-heart absolute-position liked"></i>
+      </div>
+
+      <div class="song-container relative-position">
+        <h4>Despacito</h4>
+        <h5>Luis Fonsi</h5>
+        <i class="far fa-heart absolute-position"></i>
+      </div>
+
+      <div class="song-container relative-position">
+        <h4>Venom</h4>
+        <h5>Eminem</h5>
+        <i class="far fa-heart absolute-position"></i>
+      </div>
+
+      <div class="song-container relative-position">
+        <h4>Tu Jo Mila</h4>
+        <h5>Atif Aslam</h5>
+        <i class="fas fa-heart absolute-position liked"></i>
+      </div>
+
+      <div class="song-container relative-position">
+        <h4>Tu Jo Mila</h4>
+        <h5>Atif Aslam</h5>
+        <i class="far fa-heart absolute-position"></i>
+      </div>
+
+      <div class="song-container relative-position">
+        <h4>Tu Jo Mila</h4>
+        <h5>Atif Aslam</h5>
+        <i class="far fa-heart absolute-position"></i>
+      </div>
+
+      <div class="song-container relative-position">
+        <h4>Tu Jo Mila</h4>
+        <h5>Atif Aslam</h5>
+        <i class="far fa-heart absolute-position"></i>
+      </div>
+
+      <div class="song-container relative-position">
+        <h4>Tu Jo Mila</h4>
+        <h5>Atif Aslam</h5>
+        <i class="fas fa-heart absolute-position liked"></i>
+      </div>
+
+    </div>
+  </aside>
+  <!--end of right nav menu-->
+
+  <!--bottom music player i.e. fixed wrt the screen-->
+  
+  <div class="bottom-music fixed-position  flex no-wrap ">
+    <!-- left of the music player containing song name-->
+    <div class="left-music">
+      <div class="songs-section relative-position">
+        <img src="images/songs/roar.jpg" alt="" class="player-song-image inline space-between">
+        <h3 class="inline absolute-position">Roar</h3>
+        <h5 class="inline absolute-position">Katy Perry</h5>
+      </div>
+    </div>
+    <!-- center all keys of music player -->
+    <div class="functions flex no-wrap relative-position">
+      <i class="fas fa-random"></i>
+      <i class="fas fa-step-backward"></i>
+      <i class="far fa-pause-circle"></i>
+      <i class="fas fa-step-forward"></i>
+      <i class="fas fa-history"></i>
+      <div class="player absolute-position flex no-wrap">
+        <span>1:13</span>
+        <div class="time-total">
+        <div class="time-played"></div>
+        </div>
+        <span>4:10</span>
+      </div>
+    </div>
+    <!--right part containing volume key-->
+    <div class="volume flex no-wrap ">
+      <i class="fas fa-heart liked"></i>
+      <i class="fas fa-volume-up"></i>
+      <div class="volume-full">
+        <div class="volume-set">
+        </div>
+      </div>
+      <i class="fas fa-external-link-alt"></i>
+    </div>
+  </div>
+  <!--end of bottom music player-->
+
+  <!-- main body content-->
+  
+  <div class="main-content absolute-position">
+    <!--Home screen carousel-->
+    <div class="home-carousel flex no-wrap space-between">
+      <div class="carousel-element ">
+        <img src="images/cover/cover1.jpg" alt="mood booster">
+      </div>
+      <div class="carousel-element ">
+        <img src="images/cover/cover2.jpeg" alt="edm">
+      </div>
+      <div class="carousel-element ">
+        <img src="images/cover/cover3.jpeg" alt="latin">
+      </div>
+    </div>
+    <!--end of home screen crousel-->
+    
+    <!-- latest songs section-->
+    <div class="section-starter">
+      <!--secton header-->
+      <h1 class="section-header">Latest Songs</h1>
+      <div class="songs-container flex no-wrap space-between">
+        <!--each songs-->
+        <div class="single-container relative-position">
+          <a href="#">
+          <img src="images/latest/latest2.jpg" alt="">
+          <i class="fas fa-play absolute-position"></i>
+          <h3>Roar</h3>
+          <h5 class="lightgray">Katy Perry</h5>
+          </a>
+        </div>
+
+        <div class="single-container relative-position">
+          <a href="#">
+          <img src="images/latest/latest1.jpg" alt="">
+          <i class="fas fa-play absolute-position"></i>
+          <h3>Shape of U</h3>
+          <h5 class="lightgray">Ed Sheeran</h5>
+          </a>
+        </div>
+
+        <div class="single-container relative-position">
+          <a href="#">
+          <img src="images/latest/latest3.jpg" alt="">
+          <i class="fas fa-play absolute-position"></i>
+          <h3>Venom</h3>
+          <h5 class="lightgray">Eminem</h5>
+          </a>
+        </div>
+
+        <div class="single-container relative-position">
+          <a href="#">
+          <img src="images/latest/latest4.jpg" alt="">
+          <i class="fas fa-play absolute-position"></i>
+          <h3>Despacito</h3>
+          <h5 class="lightgray">Luis Fonsi</h5>
+          </a>
+        </div>
+
+        <div class="single-container relative-position">
+          <a href="#">
+          <img src="images/latest/latest5.png" alt="">
+          <i class="fas fa-play absolute-position"></i>
+          <h3>Love me</h3>
+          <h5 class="lightgray">Selena Gomez</h5>
+          </a>
+        </div>
+
+      </div>
+    </div>
+    <!--end of latest songs section-->
+
+    <!-- Popular artists section-->
+    <div id="artists" class="section-starter">
+      <!--section header-->
+      <h1 class="section-header">Popular Artists</h1>
+      <div class="artists-container flex no-wrap space-between">
+        <!--each artists-->
+        <div class="single-artists">
+          <a href="artists.html">
+            <img src="images/artists/katty.jpg" alt="">
+            <h3>Katy</h3>
+          </a>
+        </div>
+
+        <div class="single-artists">
+          <a href="artists.html">
+            <img src="images/artists/salena.png" alt="">
+            <h3>Selena</h3>
+          </a>
+        </div>
+
+        <div class="single-artists">
+          <a href="artists.html">
+            <img src="images/artists/zyan.jpeg" alt="">
+            <h3>Zyan</h3>
+          </a>
+        </div>
+
+        <div class="single-artists">
+          <a href="artists.html">
+            <img src="images/artists/shakira.jpg" alt="">
+            <h3>Shakira</h3>
+          </a>
+        </div>
+
+        <div class="single-artists">
+          <a href="artists.html">
+            <img src="images/artists/eminem.jpg" alt="">
+            <h3>Eminem</h3>
+          </a>
+        </div>
+
+      </div>
+    </div>
+    <!--end of popular artists section-->
+
+
+    <!-- start of stations-->
+    <div id="radio" class="section-starter">
+      <div class="stations flex no-wrap space-between">
+        <!--station logo and name-->
+        <div class="station-logo relative-position">
+          <img src="images/stations/station.png" alt="">
+          <h2 class="absolute-position">Stations</h2>
+        </div>
+        <!--each stations type and name-->
+        <div class="all-stations relative-position">
+          <a href="#">
+          <img src="images/stations/love.jpeg" alt="" >
+          <h4 class="absolute-position">Love</h4>
+          </a>
+        </div>
+
+        <div class="all-stations relative-position">
+          <a href="#">
+          <img src="images/stations/chill.jpg" alt="" >
+          <h4 class="absolute-position">Chill</h4>
+          </a>
+        </div>
+
+        <div class="all-stations relative-position">
+          <a href="#">
+          <img src="images/stations/pop.jpg" alt="" >
+          <h4 class="absolute-position">Pop</h4>
+          </a>
+        </div>
+
+        <div class="all-stations relative-position">
+          <a href="#">
+          <img src="images/stations/retro.jpg" alt="" >
+          <h4 class="absolute-position">Retro</h4>
+          </a>
+        </div>
+
+        <div class="all-stations relative-position">
+          <a href="#">
+          <img src="images/stations/workout.jpg" alt="" >
+          <h4 class="absolute-position">Workout</h4>
+          </a>
+        </div>
+
+        <div class="all-stations relative-position">
+          <a href="#">
+          <img src="images/stations/rock.jpg" alt="" >
+          <h4 class="absolute-position">Rock</h4>
+          </a>
+        </div>
+
+      </div>
+    </div> 
+    <!--end of the stations section-->
+
+    <!-- movies genere same like home carousel(all the classes are same so the css is same)-->
+    <div id="browse" class="section-starter">
+      <!--section header-->
+      <h1 class="section-header">Browse</h1>
+      <div class="home-carousel flex no-wrap space-between">
+
+        <div class="carousel-element ">
+          <img src="images/movies/bollywood.jpg" alt="rap">
+        </div>
+
+        <div class="carousel-element ">
+          <img src="images/movies/rap.jpg" alt="edm">
+        </div>
+
+        <div class="carousel-element ">
+          <img src="images/movies/punjabi.jpg" alt="latin">
+        </div>
+
+      </div>
+    </div>
+
+    <!--bollywoood songs same as latest songs-->
+
+    <div id="bollywood" class="section-starter">
+      <!--section header-->
+      <h1 class="section-header">Bollywood Songs</h1>
+      <div class="songs-container flex no-wrap space-between">
+
+        <!--each bollywood songs section-->
+        <div class="single-container relative-position">
+          <a href="#">
+          <img src="images/bollywood/challa.jpg" alt="">
+          <i class="fas fa-play absolute-position"></i>
+          <h3>Challa</h3>
+          <h5 class="lightgray">Uri</h5>
+          </a>
+        </div>
+
+        <div class="single-container relative-position">
+          <a href="#">
+          <img src="images/bollywood/mitti.jpg" alt="">
+          <i class="fas fa-play absolute-position"></i>
+          <h3>Teri Mitti</h3>
+          <h5 class="lightgray">Kesari</h5>
+          </a>
+        </div>
+
+        <div class="single-container relative-position">
+          <a href="#">
+          <img src="images/bollywood/balam.jpeg" alt="">
+          <i class="fas fa-play absolute-position"></i>
+          <h3>Pichkari</h3>
+          <h5 class="lightgray">Yeh Jawani</h5>
+          </a>
+        </div>
+
+        <div class="single-container relative-position">
+          <a href="#">
+          <img src="images/bollywood/aabad.jpg" alt="">
+          <i class="fas fa-play absolute-position"></i>
+          <h3>Aabaad</h3>
+          <h5 class="lightgray">Ludo</h5>
+          </a>
+        </div>
+
+        <div class="single-container relative-position">
+          <a href="#">
+          <img src="images/bollywood/khariyat.jpg" alt="">
+          <i class="fas fa-play absolute-position"></i>
+          <h3>Khariyat</h3>
+          <h5 class="lightgray">Chichoore</h5>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- blank space at the bottom of the page-->
+    <div class="blank-space"></div>
+    
+  </div>
+</main>
+</body>
+</html>
